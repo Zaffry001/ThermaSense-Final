@@ -7,13 +7,16 @@ header {
 
 .logo-title {
     display: flex;
-    align-items: center; /* aligns logo and text vertically */
+    align-items: center;       /* aligns logo and text vertically */
+    justify-content: center;   /* centers the whole group horizontally */
+    text-align: center;        /* ensures text is centered */
 }
 
 .logo-title img {
-    height: 50px; /* adjust logo size */
-    margin-right: 10px; /* spacing between logo and text */
+    height: 50px;              /* adjust logo size */
+    margin-right: 10px;        /* spacing between logo and text */
 }
+
 
 body {
     font-family: Arial, sans-serif;
