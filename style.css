@@ -1,0 +1,337 @@
+* --- Global & Typography --- */
+header {
+    background: #265745;
+    color: white;
+    padding: 1rem;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center; /* aligns logo and text vertically */
+}
+
+.logo-title img {
+    height: 50px; /* adjust logo size */
+    margin-right: 10px; /* spacing between logo and text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; 
+    background-color: #F0F8FF;
+}
+
+.content-container {
+    max-width: 1366px;
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.section-title { 
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 1.5rem;
+}
+
+h2 { /* From user's style.css */
+    text-align: center;
+}
+
+/*--- Awareness Box ---*/
+.awareness-box {
+    background-color: #f0f8ff;
+    border-left: 5px solid #265745;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+.awareness-box h2 {
+    margin-top: 0;
+    color: #265745;
+}
+
+.awareness-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.awareness-box li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* --- Section Backgrounds & Layout --- */
+header,
+.transition-section,
+footer {
+    background-color: #DEE6FF; /* From user's style.css */
+}
+
+.tool-section { /* Specific for tool section */
+    background-color: #265745; 
+    color: white; 
+    margin-bottom: 0 !important; 
+}
+
+
+.white-content-block > .content-container { 
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px; 
+    text-align: center; 
+}
+.did-you-know blockquote, 
+.story-intro .follow-along-link { 
+    margin-left: auto;
+    margin-right: auto;
+}
+.did-you-know blockquote { padding-bottom: 0px;} 
+.story-intro .content-container p { margin-top: 10px; }
+
+
+ header, main > section {
+     margin-bottom: 20px; 
+ }
+ main > section:last-of-type { 
+    margin-bottom: 20px;
+ }
+ 
+
+/* --- Header --- */
+header .content-container {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 0px; margin-bottom: 0px; height: 474px;
+}
+.header-text { flex-basis: 55%; text-align: left; }
+header h1 {
+    color: #3bb143; font-size: 2.8em; font-weight: bold;
+    line-height: 1.2; margin-bottom: 0.5em; text-align: left; 
+}
+header p.subtitle { 
+    color: #3bb143; font-size: 1.1em; margin-top: 0; text-align: left; 
+}
+.header-image-container { flex-basis: 40%; text-align: right; }
+.header-image-container img { max-width: 100%; height: auto; max-height: 350px; }
+
+/* Style for the brand selection dropdown */
+#brand {
+    appearance: none; /* Removes default browser style */
+    background-color: #ffffff;
+    border: 2px solid #265745; /* Green border for brand feel */
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 220px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Hover effect */
+#brand:hover {
+    border-color: #45a049;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* Focus effect when clicked */
+#brand:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 8px rgba(46, 125, 50, 0.6);
+}
+
+
+/* --- Transition (CTA) Section --- */
+.transition-section .content-container {
+    display: flex; align-items: center; justify-content: space-between; gap: 30px; text-align: left; 
+}
+.transition-content-left {
+    flex-basis: 55%; display: flex; flex-direction: column; align-items: flex-start; 
+}
+.transition-text { text-align: left; margin-bottom: 20px; }
+.transition-text p {
+    color: #214FE0; font-size: 2em; font-weight: bold;
+    line-height: 1.4; margin-bottom: 1em; 
+}
+.transition-text p:last-child { margin-bottom: 0; }
+.transition-image { flex-basis: 40%; text-align: right; }
+.transition-image img { max-width: 100%; max-height: 400px; width: auto; }
+.transition-section .method-buttons { text-align: center; }
+.method-buttons button {
+    background-color: #EDE9FE; border: 2px solid #5B21B6; color: #5B21B6; 
+    padding: 10px 25px; margin: 5px 10px 5px 0; border-radius: 20px; 
+    cursor: pointer; font-weight: bold; font-size: 1em;
+}
+.method-buttons button:hover { background-color: #DDD6FE; }
+
+/* --- Interactive Tool Section --- */
+.tool-section h2.section-title { margin-bottom: 30px; } 
+.tool-controls {
+    display: flex; justify-content: center; align-items: center; 
+    gap: 15px; margin-bottom: 20px; text-align: left; 
+}
+.tool-input-columns { display: flex; gap: 0; align-items: flex-start; }
+.control-column {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    position: relative; padding: 0 10px; color:white;
+}
+.tool-input-columns .control-column:not(:last-of-type):after { 
+    content: ''; position: absolute; right: 0; top: 10%; bottom: 10%;
+    width: 2px; background-color: rgba(255, 255, 255, 0.3); 
+}
+.control-column label { font-size: 1.0em; margin-bottom: 20px; }
+.control-button {
+    background: none; border: none; color: #FDE047; font-size: 3.25em; 
+    font-weight: bold; cursor: pointer; padding: 8px; line-height: 1;
+}
+.value-display { font-size: 3.9em; font-weight: bold; margin: 10px 0; }
+.vertical-separator-major { 
+    width: 2px; background-color: rgba(255, 255, 255, 0.5); height: 230px; 
+}
+.savings-display-container { 
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    padding-left: 10px; width: 320px; 
+}
+.savings-values-display { 
+    background-color: white; color: #3bb143; padding: 20px; border-radius: 10px;
+    text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%; box-sizing: border-box;
+    height: 350px; display: flex; flex-direction: column; justify-content: center; 
+}
+.savings-values-display .estimated-usage-cost-label { font-size: 1em; font-weight: normal; margin-bottom: 5px; }
+.savings-values-display .usage-cost-display { font-size: 2.0em; font-weight: bold; margin: 0; }
+.savings-values-display .kwh-usage-display { font-size: 2.8em; font-weight: bold; margin: 3px 0 10px 0; }
+.savings-caption { 
+    font-size: 1em; font-weight: bold; line-height: 1.3; text-align: center;
+    width: 100%; box-sizing: border-box; margin-top: 10px; color: #3bb143; 
+}
+.recommendation-inefficient { color: red !important; }
+.electricity-rate-container {
+    text-align: center; margin-top: 20px; margin-bottom: 15px; 
+    color: white; /* Ensure text is white on blue background */
+    font-size: 0.85em; padding: 0 20px; line-height: 1.5; 
+    max-width: 700px; margin-left: auto; margin-right: auto; 
+}
+.tool-section .disclaimer { 
+    margin-top: 5px;
+    text-align: center; 
+    color: white; 
+}
+
+/* --- D3 Chart Common Styles --- */
+.chart-wrapper { 
+    width: 100%; max-width: 930px; 
+    margin: 0 auto; padding: 20px;
+    border-radius: 8px; box-sizing: border-box; text-align: left; 
+}
+
+
+/* --- Chart.js Graph Styling --- */
+.chart-container {
+  background-color: #FFFFFF;   /* White card background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+/* Title styling inside chart (Chart.js options handle text color, but this ensures consistency) */
+.chart-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #1E3A8A; /* Dark blue from your theme */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Chart axis labels */
+canvas {
+  background-color: #F0F8FF; /* Matches page bg */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Legend styling */
+.chartjs-legend ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.chartjs-legend li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #1E3A8A; /* Dark blue text */
+  font-weight: bold;
+}
+
+.chartjs-legend li span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 4px;
+}
+
+/* Tooltip (popup on hover) */
+.chartjs-tooltip {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #3bb143; /* Green border */
+  color: #333;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.85em;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Make the whole page background green */
+body {
+  background-color: #e7ead7; /* Green background */
+  margin: 10;
+  font-family: Arial, sans-serif;
+}
+
+/* Chart container styling */
+.chart-container {
+  background-color: #FFFFFF;   /* White card for contrast */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+/* Title inside chart */
+.chart-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #1f3d91; /* Dark blue */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Chart background */
+canvas {
+  background-color: #F0F8FF; /* Light blue plotting area */
+  border-radius: 8px;
+  padding: 10px;
+}
