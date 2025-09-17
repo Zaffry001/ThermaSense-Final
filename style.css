@@ -7,7 +7,8 @@ header {
 
 .logo-title {
     display: flex;
-    align-items: center;       /* aligns logo and text vertically */
+    align-items: center; 
+    background-color: #f0f8ff;/* aligns logo and text vertically */
     justify-content: center;   /* centers the whole group horizontally */
     text-align: center;        /* ensures text is centered */
 }
